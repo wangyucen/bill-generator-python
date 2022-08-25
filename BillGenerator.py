@@ -9,7 +9,7 @@ ordered = {}
 
 def generate_prod():
     for i in range(products_num):
-        product_name = ''.join(random.choice(string.ascii_lowercase) for i in range(3))
+        product_name = "Computer-"+''.join(random.choice(string.ascii_uppercase) for i in range(3))
         product_price = random.randint(1, 5000)
         products.setdefault(product_name, product_price)
 
